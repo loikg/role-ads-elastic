@@ -1,0 +1,10 @@
+---
+# tasks file for ads-elastic
+
+- name: Install elasticsearch
+  import_role:
+    name: elastic.elasticsearch
+  vars:
+    es_instance_name: "node1"
+    es_api_basic_auth_username: "root"
+    es_api_basic_auth_password: "root"
